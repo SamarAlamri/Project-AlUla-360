@@ -1,1 +1,92 @@
+/* Name: [Your Name], ID: [Your ID], Section: [Section], Date: [Current Date] */
 
+/* Basic Body Styles (Lecture 02) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light grey background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling (Lecture 04 - Box Model) */
+header {
+    background-color: #2c3e50; /* Modern Dark Blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation Links (Lecture 03) */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar Styling (Lecture 03 - Floating) */
+#sidebar {
+    float: left;
+    width: 20%;      /* Occupation of 20% of the width */
+    background-color: #ecf0f1;
+    padding: 15px;
+    margin: 10px;    /* Box Model Margin */
+    border: 1px solid #bdc3c7;
+}
+
+/* Main Content Area (Lecture 04 - Box Model) */
+#main-content {
+    margin-left: 25%; /* Leaves space for the floated sidebar */
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    min-height: 400px;
+}
+
+/* Footer Styling (Lecture 03 - Clearing Floats) */
+footer {
+    clear: both;     /* Ensures footer stays below the floated sidebar */
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Image styling (Lecture 02) */
+img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+}
+
+/* Form Styling */
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Optional slight curve */
+}
+
+input[type="text"], input[type="email"], select, textarea {
+    width: 90%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #bdc3c7;
+}
+
+input[type="submit"] {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #34495e;
+}

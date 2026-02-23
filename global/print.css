@@ -1,1 +1,24 @@
+/* Name: [Your Name], ID: [Your ID], Section: [Section], Date: [Current Date] */
 
+/* Hide everything except the main-content */
+header, nav, footer, aside, #sidebar {
+    display: none;
+}
+
+/* Ensure the table takes up the full page width for printing */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Lecture 05: makes borders look professional */
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Lecture 04: Formatting the print page */
+@page {
+    size: A4 portrait;
+    margin: 1in;
+}

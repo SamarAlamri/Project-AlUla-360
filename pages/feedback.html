@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AlUla 360 - Feedback</title>
+    <link rel="stylesheet" href="../global/main.css">
+</head>
+<body>
+    <header>
+        <h1>AlUla 360</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="about.html">History</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </header>
 
+    <div id="main-content">
+        <h2>We Value Your Feedback</h2>
+        <p>Please tell us about your experience in AlUla.</p>
+
+        <form action="../server/process_feedback.php" method="post" onsubmit="return validateForm()">
+            
+            <p>
+                <label for="username">Full Name:</label><br>
+                <input type="text" id="username" name="username" required>
+            </p>
+            
+            <p>
+                <label for="useremail">Email Address:</label><br>
+                <input type="email" id="useremail" name="useremail" required>
+            </p>
+
+            <p>How would you rate your visit? <br>
+                <input type="radio" id="good" name="rating" value="Good">
+                <label for="good">Good</label>
+                <input type="radio" id="average" name="rating" value="Average">
+                <label for="average">Average</label>
+                <input type="radio" id="poor" name="rating" value="Poor">
+                <label for="poor">Poor</label>
+            </p>
+
+            <p>Which activities did you enjoy? (Select all that apply):<br>
+                <input type="checkbox" id="hiking" name="activity[]" value="Hiking">
+                <label for="hiking">Hiking</label><br>
+                <input type="checkbox" id="tours" name="activity[]" value="Tours">
+                <label for="tours">Heritage Tours</label><br>
+                <input type="checkbox" id="stargazing" name="activity[]" value="Stargazing">
+                <label for="stargazing">Stargazing</label>
+            </p>
+
+            <p>
+                <label for="travel-mode">Preferred Travel Mode:</label><br>
+                <select id="travel-mode" name="travel-mode">
+                    <option value="solo">Solo Traveler</option>
+                    <option value="family">Family Group</option>
+                    <option value="friends">Friends</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="comments">Additional Comments:</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+            </p>
+
+            <p>
+                <input type="submit" value="Submit Feedback">
+                <input type="reset" value="Clear Form">
+            </p>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 AlUla 360 Project</p>
+    </footer>
+</body>
+</html>
