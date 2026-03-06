@@ -1,22 +1,30 @@
 /* Name: [Your Name], ID: [Your ID], Section: [Section], Date: [Current Date] */
 
-/* Basic Body Styles (Lecture 02) */
+/* Basic Body Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4; /* Light grey background */
+    background-color: #efe3d8; /* Soft Petal / Sandy Beige */
     margin: 0;
     padding: 0;
+    color: #3f3f3f;
 }
 
-/* Header Styling (Lecture 04 - Box Model) */
+/* Header Styling */
 header {
-    background-color: #2c3e50; /* Modern Dark Blue */
+    background-color: #7b4a32; /* Warm Copper / Sienna */
     color: white;
     padding: 20px;
     text-align: center;
 }
 
-/* Navigation Links (Lecture 03) */
+/* Navigation Area */
+nav {
+    background-color: #5a1a0a; /* Bordeaux */
+    text-align: center;
+    padding: 12px 0;
+}
+
+/* Navigation Links */
 nav a {
     color: white;
     text-decoration: none;
@@ -28,65 +36,123 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Sidebar Styling (Lecture 03 - Floating) */
+/* Sidebar Styling */
 #sidebar {
     float: left;
-    width: 20%;      /* Occupation of 20% of the width */
-    background-color: #ecf0f1;
+    width: 20%;
+    background-color: #c5a78d; /* Sandy Beige */
     padding: 15px;
-    margin: 10px;    /* Box Model Margin */
-    border: 1px solid #bdc3c7;
+    margin: 10px;
+    border: 1px solid #8f6f31; /* Autumn Russet */
+    box-sizing: border-box;
 }
 
-/* Main Content Area (Lecture 04 - Box Model) */
+/* Main Content Area */
 #main-content {
-    margin-left: 25%; /* Leaves space for the floated sidebar */
+    margin-left: 25%;
     padding: 20px;
-    background-color: white;
-    border: 1px solid #ddd;
+    background-color: #ffffff;
+    border: 1px solid #a6a6a6; /* Mountain Terrain */
     min-height: 400px;
+    box-sizing: border-box;
 }
 
-/* Footer Styling (Lecture 03 - Clearing Floats) */
+/* General Headings */
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+h2 {
+    color: #7b4a32; /* Sienna */
+}
+
+h3 {
+    color: #5a5a49; /* Earthy Olive */
+}
+
+/* Paragraphs */
+p {
+    line-height: 1.6;
+}
+
+/* Lists */
+ul, ol {
+    padding-left: 20px;
+}
+
+/* Footer Styling */
 footer {
-    clear: both;     /* Ensures footer stays below the floated sidebar */
-    background-color: #2c3e50;
+    clear: both;
+    background-color: #5f5f5f; /* River Rock */
     color: white;
     text-align: center;
     padding: 10px;
     margin-top: 20px;
 }
 
-/* Image styling (Lecture 02) */
+/* Image Styling */
 img {
     max-width: 100%;
     height: auto;
-    border: 2px solid #333;
+    border: 2px solid #5f5f5f;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #a6a6a6;
+    padding: 10px;
+    text-align: center;
+}
+
+thead th {
+    background-color: #6670a1; /* Misty Blue */
+    color: white;
+}
+
+tbody th {
+    background-color: #ddd0ca; /* Soft Petal */
+}
+
+tbody td {
+    background-color: #f8f4f1;
 }
 
 /* Form Styling */
 form {
-    background-color: #f9f9f9;
+    background-color: #f9f4ef;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px; /* Optional slight curve */
+    border: 1px solid #c5a78d;
+    border-radius: 5px;
 }
 
-input[type="text"], input[type="email"], select, textarea {
+input[type="text"],
+input[type="email"],
+select,
+textarea {
     width: 90%;
     padding: 8px;
     margin-top: 5px;
-    border: 1px solid #bdc3c7;
+    border: 1px solid #a6a6a6;
+    box-sizing: border-box;
 }
 
-input[type="submit"] {
-    background-color: #2c3e50;
+input[type="submit"],
+input[type="reset"] {
+    background-color: #7b4a32;
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    margin-right: 10px;
 }
 
-input[type="submit"]:hover {
-    background-color: #34495e;
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #5a1a0a;
 }
