@@ -20,7 +20,7 @@
         <h2>We Value Your Feedback</h2>
         <p>Please tell us about your experience in AlUla.</p>
 
-        <form action="../server/process_feedback.php" method="post" onsubmit="return validateForm()">
+        <form action="#" method="post" onsubmit="return validateForm();">
             
             <p>
                 <label for="username">Full Name:</label><br>
@@ -35,8 +35,10 @@
             <p>How would you rate your visit? <br>
                 <input type="radio" id="good" name="rating" value="Good">
                 <label for="good">Good</label>
+
                 <input type="radio" id="average" name="rating" value="Average">
                 <label for="average">Average</label>
+
                 <input type="radio" id="poor" name="rating" value="Poor">
                 <label for="poor">Poor</label>
             </p>
@@ -44,8 +46,10 @@
             <p>Which activities did you enjoy? (Select all that apply):<br>
                 <input type="checkbox" id="hiking" name="activity[]" value="Hiking">
                 <label for="hiking">Hiking</label><br>
+
                 <input type="checkbox" id="tours" name="activity[]" value="Tours">
                 <label for="tours">Heritage Tours</label><br>
+
                 <input type="checkbox" id="stargazing" name="activity[]" value="Stargazing">
                 <label for="stargazing">Stargazing</label>
             </p>
@@ -53,6 +57,7 @@
             <p>
                 <label for="travel-mode">Preferred Travel Mode:</label><br>
                 <select id="travel-mode" name="travel-mode">
+                    <option value="">Select One</option>
                     <option value="solo">Solo Traveler</option>
                     <option value="family">Family Group</option>
                     <option value="friends">Friends</option>
@@ -69,10 +74,14 @@
                 <input type="reset" value="Clear Form">
             </p>
         </form>
+
+        <p id="formMessage"></p>
     </div>
 
     <footer>
         <p>&copy; 2026 AlUla 360 Project</p>
     </footer>
+
+    <script src="../scripts/main.js"></script>
 </body>
 </html>
