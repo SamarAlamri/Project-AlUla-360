@@ -1,0 +1,115 @@
+<!-- Name: [Zain Aljifry], ID: [2107808], Section: [DAR], Date: [8 march] -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- Character encoding -->
+<meta charset="UTF-8">
+
+<!-- Page title -->
+<title>AlUla 360 - Video</title>
+
+<!-- Linking the CSS file -->
+<link rel="stylesheet" href="../global/main.css">
+
+</head>
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+<header>
+
+<!-- Website Logo -->
+<img src="../images/logo.png" alt="AlUla Logo" id="site-logo">
+
+<!-- Website Title -->
+<h1>AlUla 360</h1>
+
+<!-- Navigation Menu -->
+<nav>
+
+<a href="../index.html">Home</a>
+<a href="about.html">History</a>
+<a href="services.html">Services</a>
+<a href="video.html">Video</a>
+<a href="schedule.html">Schedule</a>
+<a href="feedback.html">Feedback</a>
+
+</nav>
+
+</header>
+
+
+<!-- ================= SIDEBAR ================= -->
+
+<aside id="sidebar">
+
+<h3>Video Section</h3>
+
+<ul>
+
+<li><a href="#tour">Tourism Video</a></li>
+<li><a href="#about">About AlUla</a></li>
+
+</ul>
+
+</aside>
+
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<div id="main-content">
+
+<h2 id="tour">Discover AlUla Through Video</h2>
+
+<p>
+This video introduces the beauty of AlUla and its famous historical
+landmarks. Visitors can explore ancient archaeological sites,
+desert landscapes, and cultural attractions that make AlUla one
+of the most unique tourism destinations in Saudi Arabia.
+</p>
+
+
+<!-- Video element from Multimedia lecture -->
+
+<video width="600" controls>
+
+<!-- Video file -->
+<source src="../videos/alula.mp4" type="video/mp4">
+
+<!-- Message if browser doesn't support video -->
+Your browser does not support the video tag.
+
+</video>
+
+
+<h3 id="about">About the Video</h3>
+
+<p>
+The video highlights the natural beauty, historical monuments,
+and cultural heritage of AlUla. It showcases locations such as
+Hegra, Elephant Rock, and the historic Old Town.
+</p>
+
+<p>
+Through this video, visitors can get a visual introduction to
+AlUla before planning their visit to this remarkable destination.
+</p>
+
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<p>&copy; 2026 AlUla 360 Project</p>
+
+</footer>
+
+
+</body>
+</html>
